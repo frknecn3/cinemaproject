@@ -1,8 +1,8 @@
-<h1> Cinema Project </h1>
+<h1> Cinema Tickets Project </h1>
 
 <h2> Goal:</h2>
 
-Creating a page using HTML,CSS and JS in order to select seats and buy tickets for an airing movie in a cinema.
+Creating a page using HTML,CSS and JS in order to select seats and buy tickets for a movie in a cinema.
 
 <h2> Features:</h2>
 <ul>
