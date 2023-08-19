@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--stil dosyası-->
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Sinema Ekranı ve Koltuk Kapsayıcısı-->
+
+    <div class="container">
+
+        <div class="screen">
+            <img id='movieImage' src="data:image/png;base64,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"
+                alt="">
+        </div>
+        <!-- Sıra-->
+        <!-- Her bir koltuk-->
+        <div class="seatsRow">
+            <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        </div>
+
+        <div class="seatsRow">
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        </div>
+
+        <div class="seatsRow">
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        </div>
+
+        <div class="seatsRow">
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        </div>
+
+        <div class="seatsRow">
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+            <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Sinema ekranı ve koltuk bitiş-->
+
+    <!-- Film Barı Başlangıç-->
+    <div class="movie-list">
+        <select id="movie">
+            <option disabled>Movie Selection</option>
+            <option>Please Choose a Movie.</option>
+            <option value="80">Movie 1</option>
+            <option value="120">Movie 2</option>
+            <option value="150">Movie 3</option>
+        </select>
+    </div>
+<!-- Movie Bar End-->
+
+    <ul class="info">
+        <li><div class="seat reserved"><i class="fa-solid fa-chair"></i>Reserved Seats</div>
+        </li>
+        <li><div class="seat selected"><i class="fa-solid fa-chair"></i>Selected Seats</div>
+            </li>
+            <li><div class="seat"><i class="fa-solid fa-chair"></i>Empty Seats</div>
+                </li>
+
+        
+    </ul>
+    <p class="infoText">The price for <span id="seatCount">4</span> tickets is <span id="total">100$</span></p>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
